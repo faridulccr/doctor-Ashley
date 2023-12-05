@@ -1,0 +1,50 @@
+.my-drawer {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+
+    .menu-side {
+        background-color: #161827;
+        border-radius: 0 40px 40px 0;
+        padding: 30px 0;
+        height: 100%;
+        position: static;
+        display: block;
+
+        .dashboard-menu {
+            display: flex;
+            flex-direction: column;
+            row-gap: 88px;
+            height: 100%;
+            align-items: center;
+
+            li {
+                text-align: center;
+
+                a,
+                .logout-btn {
+                    font-size: 16px;
+                    line-height: 21px;
+                    letter-spacing: 0px;
+                    color: #c4c2c2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    svg {
+                        font-size: 25px;
+                    }
+                }
+
+                a {
+                    transition: 0.3s;
+                    text-decoration: none;
+                    &.active,
+                    &:hover {
+                        color: #54a9f6;
+                    }
+                }
+            }
+        }
+    }
+}
