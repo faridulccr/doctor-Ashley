@@ -6,7 +6,9 @@ import { MdOutlineExpandLess } from "react-icons/md";
 import userImage from "../../../../assets/images/woman.avif";
 
 import GeoAnalytics from "./GeoAnalytics";
+import PaymentGraph from "./PaymentGraph";
 import "./SuperAdmin.style.scss";
+import TreatmentGraph from "./TreatmentGraph";
 
 const SuperAdmin = () => {
     return (
@@ -196,10 +198,20 @@ const SuperAdmin = () => {
                     <GeoAnalytics />
                 </div>
 
-                <div className="graph-container pr-10">
-                    <div></div>
-                    <div className="treatment"></div>
-                    <div className="total-payment"></div>
+                <div className="pr-10 mt-5">
+                    <div className="bg-[#D8E5F0] rounded-tl-[15px] rounded-tr-[15px] px-5 py-3 flex justify-between items-center">
+                        <h3 className="text-[28px] leading-[34px] text-[#2F3241]">
+                            Financial Health
+                        </h3>
+                        <button className="btn bg-[#2A659A] w-[120px] h-10 text-[#fff] text-[16px] leading-[19px] hover:bg-[#103b61]">
+                            This Month
+                        </button>
+                    </div>
+
+                    <div className="graph-section">
+                        <TreatmentGraph />
+                        <PaymentGraph />
+                    </div>
                 </div>
             </div>
         </section>

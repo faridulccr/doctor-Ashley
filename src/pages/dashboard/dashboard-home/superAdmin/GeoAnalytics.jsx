@@ -1,4 +1,6 @@
+import "leaflet/dist/leaflet.css";
 import { useState } from "react";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
 
 const GeoAnalytics = () => {
     const [btnValue, setBtnValue] = useState("offices");
@@ -33,7 +35,47 @@ const GeoAnalytics = () => {
                 </div>
             </div>
 
-            <div className="p-3"></div>
+            <div className="p-3 pt-7">
+                <div className="select-group">
+                    <div>
+                        <select name="" id="">
+                            <option value="">Sort by Week</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Location</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select name="" id="">
+                            <option value="">Age Group</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select name="" id="">
+                            <option value="">Medication Type</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div className="map-wrap">
+                <MapContainer
+                    center={[40.7128, -74.006]}
+                    zoom={13}
+                    scrollWheelZoom={false}
+                >
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    <Marker position={[40.7128, -74.006]}>
+                        {/* <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup> */}
+                    </Marker>
+                </MapContainer>
+            </div>
         </div>
     );
 };

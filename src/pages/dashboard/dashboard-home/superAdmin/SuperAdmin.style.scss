@@ -1,5 +1,5 @@
 .super-admin {
-    min-width: 1500px;
+    min-width: 1720px;
 }
 
 .dashboard-home-container .home-content {
@@ -71,6 +71,81 @@
                     }
                 }
             }
+
+            .select-group {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 12px;
+
+                div {
+                    background-color: #eef1f4;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    padding: 13px 20px;
+
+                    select {
+                        background-color: #eef1f4;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #2f3241;
+                        outline: none;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .map-wrap {
+                height: 370px;
+
+                position: relative;
+
+                .leaflet-container {
+                    border-radius: 20px;
+                    width: 98%;
+                    height: 98%;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 1;
+                    animation: backInRight 1s 1.2s;
+                    animation-fill-mode: forwards;
+
+                    .leaflet-control-attribution > a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .graph-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        background-color: #fff;
+        height: 440px;
+        border-radius: 0 0 15px 15px;
+        justify-content: center;
+        align-items: center;
+
+        .total-payment {
+            border-left: 1px solid rgb(221, 216, 216);
+            padding: 65px 70px;
+
+            .recharts-layer .recharts-cartesian-axis-line {
+                display: none;
+            }
+            line.recharts-cartesian-axis-tick-line {
+                display: none;
+            }
+        }
+
+        .treatment {
+            padding: 25px 70px;
+        }
+        .graph-container {
+            height: 181px;
         }
     }
 }
