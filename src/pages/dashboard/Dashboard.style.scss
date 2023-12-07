@@ -19,6 +19,7 @@
 
             li {
                 text-align: center;
+                width: 100%;
 
                 a,
                 .logout-btn {
@@ -31,6 +32,7 @@
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    position: relative;
                     svg {
                         font-size: 25px;
                     }
@@ -39,9 +41,22 @@
                 a {
                     transition: 0.3s;
                     text-decoration: none;
+                    width: 100%;
+
                     &.active,
                     &:hover {
                         color: #54a9f6;
+                    }
+
+                    &.active::after {
+                        content: "";
+                        background-color: #54a9f6;
+                        width: 9px;
+                        height: 100%;
+                        border-radius: 7px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
                     }
                 }
             }
