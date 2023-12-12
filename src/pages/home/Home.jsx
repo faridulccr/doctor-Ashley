@@ -1,5 +1,11 @@
+import SuperAdminHome from "./super-admin-home/SuperAdminHome";
+
 const Home = () => {
-    return <div>Home</div>;
+    return (
+        <>
+            <SuperAdminHome />
+        </>
+    );
 };
 
 export default Home;

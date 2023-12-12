@@ -1,0 +1,134 @@
+.super-admin-home {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 44px;
+
+    ul li {
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 20px;
+        transition: 0.3s;
+
+        &.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 7px;
+            position: absolute;
+            bottom: 0;
+            background-color: #f8add0;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+}
+
+.chat-container {
+    .you,
+    .user {
+        display: block;
+        width: fit-content;
+        max-width: 300px;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 20px;
+
+        .text {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 18px;
+            margin-bottom: 5px;
+        }
+        .date {
+            color: #878789;
+            font-size: 12px;
+            line-height: 14px;
+            display: block;
+        }
+    }
+
+    .you {
+        margin-left: auto;
+        .text {
+            background-color: #e9ecfd;
+            color: #2f3241;
+            border-radius: 15px 15px 0px 15px;
+        }
+        .date {
+            text-align: right;
+        }
+    }
+
+    .user .text {
+        background-color: #f7f6fb;
+        color: #212227;
+        border-radius: 15px 15px 15px 0px;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 57px 1fr;
+        gap: 8px;
+        margin-top: 20px;
+
+        .file-input,
+        .text-input {
+            border: 1px solid #e8e8ea;
+            border-radius: 10px;
+            height: 57px;
+            display: flex;
+            align-items: center;
+            padding: 20px 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .file-input {
+            input[type="file"] {
+                opacity: 0;
+                width: 28px;
+                position: absolute;
+                height: 28px;
+                width: 28px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .paper-clip {
+                position: absolute;
+                height: 28px;
+                width: 28px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+
+        .text-input {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding: 0 15px;
+            gap: 7px;
+            input[type="text"] {
+                outline: 0;
+                border: 0;
+                font-size: 18px;
+            }
+            .emoji {
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1425px;
+    height: auto;
+    max-width: 921px;
+    position: relative;
+
+    .video {
+        border-radius: 30px;
+    }
+}

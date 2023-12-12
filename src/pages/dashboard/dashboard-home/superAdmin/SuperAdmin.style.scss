@@ -80,7 +80,6 @@
                 div {
                     background-color: #eef1f4;
                     border-radius: 25px;
-                    cursor: pointer;
                     padding: 13px 20px;
 
                     select {
@@ -90,6 +89,7 @@
                         color: #2f3241;
                         outline: none;
                         width: 100%;
+                        cursor: pointer;
                     }
                 }
             }
