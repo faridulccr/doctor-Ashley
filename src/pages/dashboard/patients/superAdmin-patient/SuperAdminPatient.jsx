@@ -6,7 +6,7 @@ import MyPatients from "./MyPatients";
 import "./SuperAdminPatient.style.scss";
 
 const SuperAdminPatient = () => {
-    const [menuName, setMenuName] = useState("chat");
+    const [menuName, setMenuName] = useState("patients");
 
     return (
         <div className="super-admin-patient">

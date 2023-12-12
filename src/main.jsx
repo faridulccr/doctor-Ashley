@@ -9,6 +9,7 @@ import "./index.scss";
 import Billings from "./pages/dashboard/billings/Billings";
 import Calender from "./pages/dashboard/calender/Calender";
 import Dashboard from "./pages/dashboard/Dashboard";
+import ClinicManager from "./pages/dashboard/dashboard-home/clinic-manager/ClinicManager";
 import DashboardHome from "./pages/dashboard/dashboard-home/DashboardHome";
 import Financial from "./pages/dashboard/financial/Financial";
 import Message from "./pages/dashboard/message/Message";
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "dashboard-home",
                 element: <DashboardHome />,
+            },
+            {
+                path: "clinic-manager",
+                element: <ClinicManager />,
             },
             {
                 path: "patients",
