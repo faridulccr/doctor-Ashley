@@ -1,7 +1,12 @@
 import "./Patients.style.scss";
+import SuperAdminPatient from "./superAdmin-patient/SuperAdminPatient";
 
 const Patients = () => {
-    return <div>Patients</div>;
+    return (
+        <>
+            <SuperAdminPatient />
+        </>
+    );
 };
 
 export default Patients;

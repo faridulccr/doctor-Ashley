@@ -3,23 +3,23 @@
     grid-template-columns: 412px 1fr;
     background-color: #f8f7fc;
 
-    .profile-details {
-        border-radius: 0 40px 40px 0;
-        background-color: #ffffff;
-
-        table tr td {
-            padding: 0 30px 20px 0;
-        }
-        ul li {
-            padding-bottom: 20px;
-        }
-    }
-
     .home-content {
         .row-2 {
             display: grid;
             grid-template-columns: 40% 60%;
             column-gap: 20px;
         }
+    }
+}
+
+.profile-details {
+    border-radius: 0 40px 40px 0;
+    background-color: #ffffff;
+
+    table tr td {
+        padding: 0 30px 20px 0;
+    }
+    ul li {
+        padding-bottom: 20px;
     }
 }
