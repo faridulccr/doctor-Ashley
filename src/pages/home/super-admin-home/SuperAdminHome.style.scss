@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 44px;
+    min-width: 1320px;
+    margin: 0 auto;
 
     ul li {
         cursor: pointer;
@@ -122,13 +124,51 @@
 }
 
 .video-container {
-    width: 100%;
-    max-width: 1425px;
-    height: auto;
-    max-width: 921px;
     position: relative;
-
     .video {
+        width: 100%;
+        max-width: 1425px;
+        height: auto;
+        max-height: 921px;
         border-radius: 30px;
+    }
+
+    .my-face img {
+        border: 2px solid #1b2eb1;
+        border-radius: 17px;
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        top: 37px;
+        right: 37px;
+    }
+}
+
+.extra-btn {
+    margin-top: 60px;
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        background-color: #f8f7fc;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 34px;
+        color: #0a1996;
+    }
+    button {
+        font: 16px/19px DM Sans;
+        letter-spacing: 0px;
+        color: #707070;
     }
 }

@@ -1,8 +1,10 @@
 import { GoDotFill } from "react-icons/go";
 import userImage from "../../../assets/images/woman.avif";
+import myFace from "../../../assets/images/young-beautiful.avif";
 
 import { useState } from "react";
 import Chat from "./Chat";
+import ExtraButton from "./ExtraButton";
 import "./SuperAdminHome.style.scss";
 
 const SuperAdminHome = () => {
@@ -70,13 +72,22 @@ const SuperAdminHome = () => {
                     <Chat />
                 </div>
 
-                <div>
+                <div className="font-['DM_Sans']">
                     <div className="video-container">
                         <img className="video" src={userImage} alt="" />
-                        <div className="time"></div>
-                        <div className="my-face"></div>
+                        <div className="bg-[#393B48] rounded-[10px] p-3 w-[150px] h-[75px] absolute top-[37px] left-[37px]">
+                            <p className="text-base text-[#D2D5DE]">
+                                Time remaining
+                            </p>
+                            <span className=" text-2xl text-white">11:29</span>
+                        </div>
+                        <div className="my-face">
+                            <img src={myFace} alt="" />
+                        </div>
                         <div className="controls"></div>
                     </div>
+
+                    <ExtraButton />
                 </div>
             </section>
         </>
