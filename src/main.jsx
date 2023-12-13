@@ -11,6 +11,7 @@ import Calender from "./pages/dashboard/calender/Calender";
 import Dashboard from "./pages/dashboard/Dashboard";
 import ClinicManager from "./pages/dashboard/dashboard-home/clinic-manager/ClinicManager";
 import DashboardHome from "./pages/dashboard/dashboard-home/DashboardHome";
+import Secretary from "./pages/dashboard/dashboard-home/secretary/Secretary";
 import Financial from "./pages/dashboard/financial/Financial";
 import Message from "./pages/dashboard/message/Message";
 import Patients from "./pages/dashboard/patients/Patients";
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: "clinic-manager",
                 element: <ClinicManager />,
+            },
+            {
+                path: "secretary",
+                element: <Secretary />,
             },
             {
                 path: "patients",
