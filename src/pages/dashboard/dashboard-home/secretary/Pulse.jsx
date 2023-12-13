@@ -73,10 +73,10 @@ const Pulse = () => {
                                     34MB
                                 </span>
                                 <div className="hover-effect">
-                                    <button className="bg-[#D8E5F0]">
+                                    <button>
                                         <FaRegEnvelopeOpen />
                                     </button>
-                                    <button className="bg-[#2A659A] text-white">
+                                    <button>
                                         <RiArrowGoForwardFill />
                                     </button>
                                 </div>
@@ -95,10 +95,10 @@ const Pulse = () => {
                                     34MB
                                 </span>
                                 <div className="hover-effect">
-                                    <button className="bg-[#D8E5F0]">
+                                    <button>
                                         <FaRegEnvelopeOpen />
                                     </button>
-                                    <button className="bg-[#2A659A] text-white">
+                                    <button>
                                         <RiArrowGoForwardFill />
                                     </button>
                                 </div>
@@ -117,10 +117,10 @@ const Pulse = () => {
                                     34MB
                                 </span>
                                 <div className="hover-effect">
-                                    <button className="bg-[#D8E5F0]">
+                                    <button>
                                         <FaRegEnvelopeOpen />
                                     </button>
-                                    <button className="bg-[#2A659A] text-white">
+                                    <button>
                                         <RiArrowGoForwardFill />
                                     </button>
                                 </div>
