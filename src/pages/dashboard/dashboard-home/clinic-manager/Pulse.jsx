@@ -14,7 +14,7 @@ const Pulse = () => {
                 </h3>
             </div>
             <div className="content bg-white p-5 rounded-bl-[15px] rounded-br-[15px] flex items-start">
-                <div className="pr-5">
+                <div className="pr-5 w-[200px]">
                     <h3>SOAP Note Eval</h3>
                     <ul>
                         <li>
@@ -38,7 +38,7 @@ const Pulse = () => {
                     </ul>
                 </div>
 
-                <div className="font-['DM_Sans'] text-[#2F3241] px-5 border">
+                <div className="font-['DM_Sans'] text-[#2F3241] px-5">
                     <h4 className="text-[15px] font-semibold flex items-center justify-between mb-2">
                         Body info{" "}
                         <button>
@@ -87,6 +87,20 @@ const Pulse = () => {
                         <div className="arrow">
                             <MdKeyboardArrowLeft />
                             <MdKeyboardArrowRight />
+                        </div>
+
+                        <div className="human-body-content leading-[1px]">
+                            <p className="text-sm font-semibold">
+                                Oxygen level
+                            </p>
+                            <span className="text-sm text-[grey]">+1.2%</span>
+                            <span className="text-sm text-[grey] block mt-2">
+                                SpO2
+                            </span>
+                            <div className="flex">
+                                <span className="font-bold text-xl">98%</span>
+                                {/* <img src={flower} alt="" /> */}
+                            </div>
                         </div>
                     </div>
                 </div>
