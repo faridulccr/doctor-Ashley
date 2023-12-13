@@ -2,6 +2,8 @@ import { useState } from "react";
 import userImage from "../../../../assets/images/woman.avif";
 import SuperAdminProfile from "../../../../components/SuperAdminProfile";
 import "./ClinicManager.style.scss";
+import Pulse from "./Pulse";
+import ToDo from "./ToDo";
 
 const ClinicManager = () => {
     const [menuName, setMenuName] = useState("overview");
@@ -111,20 +113,8 @@ const ClinicManager = () => {
                 <hr />
 
                 <div className="row-2 mt-5 mr-4">
-                    <div className="to-do">
-                        <div className="bg-[#D8E5F0] rounded-tl-[15px] rounded-tr-[15px] px-5 py-3">
-                            <h3 className="text-[28px] leading-[34px] text-[#2F3241]">
-                                To Do
-                            </h3>
-                        </div>
-                    </div>
-                    <div className="pulse">
-                        <div className="bg-[#D8E5F0] rounded-tl-[15px] rounded-tr-[15px] px-5 py-3">
-                            <h3 className="text-[28px] leading-[34px] text-[#2F3241]">
-                                Pulse
-                            </h3>
-                        </div>
-                    </div>
+                    <ToDo />
+                    <Pulse />
                 </div>
 
                 <div className="row-3 mt-5 mr-4">
