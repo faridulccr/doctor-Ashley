@@ -2,6 +2,7 @@ import { useState } from "react";
 import userImage from "../../../../assets/images/woman.avif";
 import SuperAdminProfile from "../../../../components/SuperAdminProfile";
 import "./ClinicManager.style.scss";
+import FinancialHealth from "./FinancialHealth";
 import Pulse from "./Pulse";
 import ToDo from "./ToDo";
 
@@ -118,14 +119,7 @@ const ClinicManager = () => {
                 </div>
 
                 <div className="row-3 mt-5 mr-4">
-                    <div className="bg-[#D8E5F0] rounded-tl-[15px] rounded-tr-[15px] px-5 py-3 flex justify-between items-center">
-                        <h3 className="text-[28px] leading-[34px] text-[#2F3241]">
-                            Financial Health
-                        </h3>
-                        <button className="btn bg-[#2A659A] w-fit h-10 text-[#fff] text-[16px] leading-[19px] hover:bg-[#103b61]">
-                            Manage Refils
-                        </button>
-                    </div>
+                    <FinancialHealth />
                 </div>
             </div>
         </div>

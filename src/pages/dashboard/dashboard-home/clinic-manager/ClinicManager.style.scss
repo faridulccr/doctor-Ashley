@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 412px 1fr;
     background-color: #f8f7fc;
-    min-width: 1600px;
+    min-width: 1800px;
     min-height: 100%;
 
     .home-content {
@@ -158,13 +158,33 @@
             }
             .human-body-content {
                 padding: 5px 10px;
-                width: 150px;
-                border: 1px solid rgba(0, 0, 0, 0.05);
+                width: 120px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
                 background-color: #ffffff;
                 position: absolute;
                 top: 82px;
                 left: 183px;
             }
+        }
+
+        ul.body-menu li {
+            padding: 5px 10px;
+            transition: 0.3s;
+            &.active {
+                background-color: #f4f9ff;
+                border-radius: 6px;
+                width: fit-content;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .row-3 {
+        table tbody tr {
+            border-bottom: 1px solid #d3ddea;
         }
     }
 }

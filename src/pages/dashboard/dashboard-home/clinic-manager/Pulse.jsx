@@ -5,6 +5,7 @@ import human_body from "../../../../assets/images/Body_Icon.svg";
 
 const Pulse = () => {
     const [menuName, setMenuName] = useState("pulmonology");
+    const [bodyMenu, setBodyMenu] = useState("alarming");
 
     return (
         <div className="pulse">
@@ -105,7 +106,47 @@ const Pulse = () => {
                     </div>
                 </div>
 
-                <div></div>
+                <div className="text-[15px] leading-[18px] text-[#2F3241] font-['DM_Sans']">
+                    <select className="border border-[#C9C9C9] rounded-[6px] px-4 py-2 outline-0 font-semibold">
+                        <option value="#">This Month</option>
+                        <option value="#">Last Month</option>
+                        <option value="#">Next Month</option>
+                        <option value="#">June</option>
+                    </select>
+
+                    <ul className="body-menu mt-16 leading-8">
+                        <li
+                            onClick={() => setBodyMenu("visit")}
+                            className={bodyMenu === "visit" && "active"}
+                        >
+                            Visit history
+                        </li>
+                        <li
+                            onClick={() => setBodyMenu("diagnoses")}
+                            className={bodyMenu === "diagnoses" && "active"}
+                        >
+                            Diagnoses
+                        </li>
+                        <li
+                            onClick={() => setBodyMenu("scans")}
+                            className={bodyMenu === "scans" && "active"}
+                        >
+                            Scans
+                        </li>
+                        <li
+                            onClick={() => setBodyMenu("alarming")}
+                            className={bodyMenu === "alarming" && "active"}
+                        >
+                            Alarming areas
+                        </li>
+                        <li
+                            onClick={() => setBodyMenu("stable")}
+                            className={bodyMenu === "stable" && "active"}
+                        >
+                            Stable areas
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
