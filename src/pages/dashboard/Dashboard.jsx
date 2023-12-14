@@ -3,6 +3,7 @@ import { BsCalendar3 } from "react-icons/bs";
 import { FaListAlt, FaUsers } from "react-icons/fa";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
 import { IoBarChartOutline, IoLogOutOutline } from "react-icons/io5";
+import logo from "../../assets/images/Logo.png";
 
 import { NavLink, Outlet } from "react-router-dom";
 import useTitle from "../../hooks/useTitle";
@@ -22,7 +23,13 @@ const Dashboard = () => {
                     <ul className="dashboard-menu">
                         {/* Sidebar content here */}
                         <li>
-                            <NavLink to="/">logo</NavLink>
+                            <NavLink to="/">
+                                <img
+                                    className="w-[86px] h-[70px] -ml-5"
+                                    src={logo}
+                                    alt=""
+                                />
+                            </NavLink>
                         </li>
                         <li>
                             <NavLink to="dashboard-home">

@@ -77,6 +77,7 @@ const PaymentGraph = () => {
                         />
                     </LineChart>
                 </ResponsiveContainer>
+                <p className="sep">Sep</p>
             </div>
         </div>
     );

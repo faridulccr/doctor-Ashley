@@ -1,6 +1,7 @@
 import { FaRegEnvelopeOpen } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { RiArrowGoForwardFill } from "react-icons/ri";
+import Graph from "./Graph";
 
 const Pulse = () => {
     return (
@@ -45,7 +46,7 @@ const Pulse = () => {
                         </div>
                     </div>
 
-                    <div>{/* TODO Graph */}</div>
+                    <Graph />
                 </div>
 
                 <div className="pr-5">

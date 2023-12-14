@@ -144,8 +144,34 @@
         .treatment {
             padding: 25px 70px;
         }
+
         .graph-container {
             height: 181px;
+            position: relative;
+
+            .sep {
+                position: absolute;
+                left: 0;
+                bottom: 8px;
+                text-transform: uppercase;
+                color: #666666;
+            }
+
+            .jun {
+                position: absolute;
+                left: 0;
+                bottom: 8px;
+                color: #666666;
+                &::before {
+                    content: "-";
+                    display: block;
+                    position: absolute;
+                    transform: rotate(90deg);
+                    font-size: 20px;
+                    top: -14px;
+                    left: 50%;
+                }
+            }
         }
     }
 }

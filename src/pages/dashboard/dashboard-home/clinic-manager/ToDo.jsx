@@ -26,9 +26,8 @@ const ToDo = () => {
                         <IoIosArrowForward className="text-[26px]" />
                     </p>
                 </div>
-            </div>
-            <div className="bg-white p-5 rounded-bl-[15px] rounded-br-[15px]">
-                <div className="text-xl leading-6 font-['DM_Sans'] text-[#2F3241] bg-[#E9ECFD] rounded-[15px] p-4 pr-6">
+
+                <div className="text-xl leading-6 font-['DM_Sans'] text-[#2F3241] bg-[#E9ECFD] rounded-[15px] p-4 pr-6 mt-5">
                     <p>Oct 25th 12:15pm</p>
                     <p>
                         Follow up visit with Carrie S. VIRTUAL Dr. Anne
