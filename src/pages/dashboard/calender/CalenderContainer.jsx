@@ -11,6 +11,26 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 const CalenderContainer = () => {
     //  const [showSearchBar, setShowSearchBar] = useState(false);
 
+    //  const events = [
+    //      { title: "Meeting", start: new Date() },
+    //      { title: "Visit", start: new Date() },
+    //      { title: "Task", start: new Date() },
+    //      { title: "Call", start: new Date() },
+    //  ];
+
+    //  const renderEventContent = (eventInfo) => {
+    //      return (
+    //          <>
+    //              <b>{eventInfo.timeText}</b>
+    //              <i>{eventInfo.event.title}</i>
+    //          </>
+    //      );
+    //  };
+
+    const handleSelect = (start, end, allDays) => {
+        console.log("selecting...");
+    };
+
     return (
         <div className="calender-container mt-5">
             {/* <div className="bg-[#D8E5F0] rounded-tl-[15px] rounded-tr-[15px] px-5 py-3 flex justify-between items-center">
@@ -66,13 +86,15 @@ const CalenderContainer = () => {
                     ]}
                     initialView="dayGridMonth"
                     headerToolbar={{
-                        start: "today prev next",
+                        start: "dayGridMonth timeGridWeek timeGridDay",
                         center: "title",
-                        end: "dayGridMonth timeGridWeek timeGridDay",
+                        end: "prev today next",
                     }}
                     //   weekends={false}
-                    // events={events}
-                    // eventContent={renderEventContent}
+                    //   events={events}
+                    selectable
+                    //   eventContent={renderEventContent}
+                    select={handleSelect}
                 />
             </div>
         </div>
