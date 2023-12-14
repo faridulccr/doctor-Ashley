@@ -1,26 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "/**/*.jsx",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "/**/*.jsx",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "/dist"
-            }
-        }
-    ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/dist/$1"
+            "src": "/[^.]+",
+            "dest": "/"
         }
     ]
 }
