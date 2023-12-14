@@ -65,7 +65,7 @@ const TreatmentGraph = () => {
                     <p className="font-bold">4.70%</p>
                 </div>
             </div>
-            <div className="border graph-container">
+            <div className="graph-container">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart width={300} height={100} data={data}>
                         <XAxis dataKey="name" />

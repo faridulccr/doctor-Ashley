@@ -11,6 +11,7 @@ const Secretary = () => {
     return (
         <div className="secretary-home">
             <Profile />
+
             <div className="home-content pl-4 pt-5">
                 <div className="flex justify-between items-center">
                     {/* menu */}
