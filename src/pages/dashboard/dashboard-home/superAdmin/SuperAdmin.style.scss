@@ -1,12 +1,12 @@
-.super-admin {
-    min-width: 1720px;
-}
-
 .dashboard-home-container .home-content {
     .row-2 {
         display: grid;
         grid-template-columns: 450px 1fr;
         column-gap: 20px;
+
+        @media screen and (max-width: 1920px) {
+            grid-template-columns: 1fr;
+        }
 
         .pulse,
         .geo-analytics {
@@ -129,9 +129,19 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 1920px) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+
         .total-payment {
             border-left: 1px solid rgb(221, 216, 216);
             padding: 65px 70px;
+
+            @media screen and (max-width: 1920px) {
+                border-left: none;
+                border-top: 1px solid rgb(221, 216, 216);
+            }
 
             .recharts-layer .recharts-cartesian-axis-line {
                 display: none;

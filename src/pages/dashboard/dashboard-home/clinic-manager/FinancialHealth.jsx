@@ -11,10 +11,10 @@ const FinancialHealth = () => {
                     Manage Refils
                 </button>
             </div>
-            <div className="bg-white rounded-bl-[15px] rounded-br-[15px] p-5  text-[#2F3241] font-['DM_Sans']">
+            <div className="table-container bg-white rounded-bl-[15px] rounded-br-[15px] p-5  text-[#2F3241] font-['DM_Sans']">
                 <p className="text-[32px]">Patients</p>
 
-                <table className="text-lg w-full leading-9">
+                <table className="text-lg leading-9 overflow-auto">
                     <thead>
                         <tr>
                             <td>
@@ -51,7 +51,7 @@ const FinancialHealth = () => {
                             <td>5</td>
                             <td>15</td>
                             <td>
-                                <div className="my-3 text-base">
+                                <div className="my-3 text-base flex items-center">
                                     <button className="h-10 bg-[#2A9A57] rounded-lg px-4 text-white">
                                         Approve
                                     </button>

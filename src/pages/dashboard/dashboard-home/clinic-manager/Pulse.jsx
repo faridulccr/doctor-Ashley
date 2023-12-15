@@ -15,7 +15,7 @@ const Pulse = () => {
                 </h3>
             </div>
             <div className="content bg-white p-5 rounded-bl-[15px] rounded-br-[15px] flex items-start">
-                <div className="pr-5 w-[200px]">
+                <div className="col-1 pr-5 w-[200px]">
                     <h3>SOAP Note Eval</h3>
                     <ul>
                         <li>
@@ -39,7 +39,7 @@ const Pulse = () => {
                     </ul>
                 </div>
 
-                <div className="font-['DM_Sans'] text-[#2F3241] px-5">
+                <div className="col-2 font-['DM_Sans'] text-[#2F3241] px-5">
                     <h4 className="text-[15px] font-semibold flex items-center justify-between mb-2">
                         Body info{" "}
                         <button>
@@ -106,7 +106,7 @@ const Pulse = () => {
                     </div>
                 </div>
 
-                <div className="text-[15px] leading-[18px] text-[#2F3241] font-['DM_Sans']">
+                <div className="col-3 text-[15px] leading-[18px] text-[#2F3241] font-['DM_Sans']">
                     <select className="border border-[#C9C9C9] rounded-[6px] px-4 py-2 outline-0 font-semibold">
                         <option value="#">This Month</option>
                         <option value="#">Last Month</option>

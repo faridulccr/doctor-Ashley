@@ -28,6 +28,7 @@
 }
 
 .my-patient-sec {
+    position: relative;
     .btn-container .search {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -63,13 +64,15 @@
 }
 
 .table-container {
+    position: absolute;
+    width: 100%;
     max-height: 1036px;
-    overflow-y: auto;
+    overflow: auto;
     margin-bottom: 20px;
 }
 
 .table-container table {
-    width: 100%;
+    // width: 100%;
 
     background-color: White;
     padding-bottom: 15px;

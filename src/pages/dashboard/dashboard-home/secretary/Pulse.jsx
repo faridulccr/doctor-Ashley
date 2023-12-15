@@ -15,7 +15,7 @@ const Pulse = () => {
                 </button>
             </div>
 
-            <div className="bg-white rounded-bl-[15px] rounded-br-[15px] p-5 text-lg  text-[#2F3241] font-['DM_Sans'] grid grid-cols-2 gap-5">
+            <div className="pulse-content bg-white rounded-bl-[15px] rounded-br-[15px] p-5 text-lg  text-[#2F3241] font-['DM_Sans'] grid grid-cols-2 gap-5">
                 <div>
                     <p className="text-[22px] mb-3">Patience Attendance</p>
 

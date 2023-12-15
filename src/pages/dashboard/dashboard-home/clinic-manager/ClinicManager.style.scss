@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 412px 1fr;
     background-color: #f8f7fc;
-    min-width: 1800px;
     min-height: 100%;
 
     .home-content {
@@ -30,9 +29,29 @@
         display: grid;
         grid-template-columns: 450px 1fr;
         column-gap: 20px;
+        @media screen and (max-width: 1920px) {
+            grid-template-columns: 1fr;
+            // gap: 50px;
+        }
     }
 
     .pulse .content {
+        @media screen and (max-width: 1920px) {
+            .col-1 {
+                grid-area: col1;
+            }
+            .col-2 {
+                grid-area: col2;
+            }
+            .col-3 {
+                grid-area: col3;
+            }
+            display: grid;
+            grid-template-areas:
+                "col1 col3"
+                "col2 col2";
+        }
+
         h3 {
             font: 22px/26px DM Sans;
             color: #2f3241;
@@ -185,6 +204,23 @@
     .row-3 {
         table tbody tr {
             border-bottom: 1px solid #d3ddea;
+        }
+
+        @media screen and (max-width: 1920px) {
+            .table-container {
+                table {
+                    min-width: 700px;
+
+                    tr td {
+                        padding-left: 10px;
+                        padding-right: 10px;
+
+                        p {
+                            line-height: 1.3;
+                        }
+                    }
+                }
+            }
         }
     }
 }
