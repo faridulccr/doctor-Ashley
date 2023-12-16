@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 412px 1fr;
     background-color: #f8f7fc;
+    min-height: 100vh;
 
     .home-content {
         .row-2 {

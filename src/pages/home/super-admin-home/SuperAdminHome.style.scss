@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 44px;
-    max-width: 1350px;
+    min-width: 1300px;
+    max-width: 1450px;
     margin: 0 auto;
 
     ul li {
@@ -125,12 +126,14 @@
 
 .video-container {
     position: relative;
-    .video {
+    img.video {
         width: 100%;
-        max-width: 1425px;
         height: auto;
         max-height: 921px;
         border-radius: 30px;
+        @media screen and (max-width: 1450px) {
+            height: 600px;
+        }
     }
 
     .my-face img {

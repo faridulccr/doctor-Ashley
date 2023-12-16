@@ -17,6 +17,11 @@ body {
     min-width: 1300px;
     width: 100%;
     height: fit-content;
+    height: 100vh;
+
+    @media screen and (max-width: 1920px) {
+        height: fit-content;
+    }
 }
 
 img {

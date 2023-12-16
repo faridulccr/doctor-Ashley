@@ -1,6 +1,7 @@
 .my-drawer {
     display: grid;
     grid-template-columns: 125px 1fr;
+    min-height: 100vh;
 
     .menu-side {
         background-color: #161827;
@@ -9,6 +10,14 @@
         height: 100%;
         position: static;
         display: block;
+        @media screen and (max-width: 1920px) {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 0;
+            width: 115px;
+        }
 
         .dashboard-menu {
             display: flex;
@@ -61,6 +70,10 @@
                         top: 0;
                     }
                 }
+            }
+
+            @media screen and (max-width: 1920px) {
+                row-gap: 4vh;
             }
         }
     }
