@@ -52,7 +52,7 @@ const CalenderContainer = () => {
                 </div>
             </dialog>
 
-            <div className="bg-white">
+            <div className="bg-white rounded-tl-[15px] rounded-tr-[15px]">
                 <FullCalendar
                     plugins={[
                         dayGridPlugin,

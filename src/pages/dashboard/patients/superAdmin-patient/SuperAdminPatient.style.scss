@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 412px 1fr;
     background-color: #f8f7fc;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .patient-content {
@@ -112,10 +112,10 @@
             position: absolute;
             width: 100%;
             overflow: auto;
-            max-height: 850px;
+            max-height: 650px;
 
             table {
-                min-width: 800px;
+                min-width: 600px;
             }
         }
     }
