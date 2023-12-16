@@ -12,7 +12,7 @@ const SuperAdminHome = () => {
 
     return (
         <>
-            <section className="super-admin-home py-9 px-4">
+            <section className="super-admin-home py-6 px-4">
                 <div className="w-[425px]">
                     {/* profile */}
                     <div className="flex items-center justify-center gap-6 mt-10 font-['DM_Sans']">
